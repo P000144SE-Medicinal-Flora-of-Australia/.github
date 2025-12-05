@@ -1,0 +1,13 @@
+Component,Count,Description,Data_Type,Source,Last_Updated
+"Plant Genera","266","Australian flora with documented customary use","Taxonomic","Manual Curation + CSIRO","2024-01-15"
+"Chemical Classes","132","Specialized metabolite classifications","Chemical","Literature Review","2024-01-15"
+"Therapeutic Categories","27","Traditional medicinal applications","Ethnobotanical","Indigenous Knowledge","2024-01-15"
+"Chemical Entities (v2)","5821","Detailed molecular structures with SMILES","Molecular","CSIRO Dataset","2024-02-01"
+"SMILES Codes","5821","Simplified molecular input line entry system","Chemical_Identifier","Automated","2024-02-01"
+"Taxonomic IDs","266","Standardized botanical identifiers","Taxonomic_Identifier","GBIF/APNI","2024-01-15"
+"Literature References","450+","Peer-reviewed publications","Bibliographic","SciFindern/PubMed","2024-01-15"
+"Geographic Distribution","266","Australian bioregions and states","Geospatial","CSIRO/GBIF","2024-01-15"
+"InChI Keys","5821","International Chemical Identifier keys","Chemical_Identifier","Computed","2024-02-01"
+"Molecular Descriptors","5821","Physicochemical properties","Computational","RDKit Pipeline","2024-02-01"
+"Bioactivity Data","1200+","Reported biological activities","Experimental","Literature Mining","2024-01-15"
+"Spectral Data","800+","NMR and MS spectroscopic data","Analytical","Literature Extraction","2024-01-15"

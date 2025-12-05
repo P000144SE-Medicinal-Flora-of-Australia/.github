@@ -40,52 +40,11 @@
 
 <div align="center">
 
-### 📥 Download Dataset Metadata
+### 📥 Check Dataset Metadata
 
-<button onclick="downloadMetadata()" style="
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
-" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='translateY(0px)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.2)'">
-  📊 Download Metadata CSV
-</button>
+[![Check CSV](https://img.shields.io/badge/📊_Download-Metadata_CSV-blue?style=for-the-badge)](https://github.com/P000144SE-Medicinal-Flora-of-Australia/.github/blob/main/data/cmfoa_metadata.csv)
 
-<script>
-function downloadMetadata() {
-  const metadata = [
-    ['Component', 'Count', 'Description', 'Data_Type', 'Source', 'Last_Updated'],
-    ['Plant Genera', '266', 'Australian flora with documented customary use', 'Taxonomic', 'Manual Curation + CSIRO', '2024-01-15'],
-    ['Chemical Classes', '132', 'Specialized metabolite classifications', 'Chemical', 'Literature Review', '2024-01-15'],
-    ['Therapeutic Categories', '27', 'Traditional medicinal applications', 'Ethnobotanical', 'Indigenous Knowledge', '2024-01-15'],
-    ['Chemical Entities (v2)', '5821', 'Detailed molecular structures with SMILES', 'Molecular', 'CSIRO Dataset', '2024-02-01'],
-    ['SMILES Codes', '5821', 'Simplified molecular input line entry system', 'Chemical_Identifier', 'Automated', '2024-02-01'],
-    ['Taxonomic IDs', '266', 'Standardized botanical identifiers', 'Taxonomic_Identifier', 'GBIF/APNI', '2024-01-15'],
-    ['Literature References', '450+', 'Peer-reviewed publications', 'Bibliographic', 'SciFindern/PubMed', '2024-01-15'],
-    ['Geographic Distribution', '266', 'Australian bioregions and states', 'Geospatial', 'CSIRO/GBIF', '2024-01-15']
-  ];
-  
-  const csvContent = metadata.map(row => row.map(field => `"${field}"`).join(',')).join('\n');
-  const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-  const link = document.createElement('a');
-  
-  if (link.download !== undefined) {
-    const url = URL.createObjectURL(blob);
-    link.setAttribute('href', url);
-    link.setAttribute('download', 'cmfoa_metadata.csv');
-    link.style.visibility = 'hidden';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-}
-</script>
+*Click the badge above to download the complete dataset metadata*
 
 </div>
 
